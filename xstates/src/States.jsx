@@ -111,7 +111,8 @@ function LocationSelector() {
       <div>
         {selectedCountry && selectedState && selectedCity && (
           <div style={{ padding: "20px" }}>
-            You Selected {selectedCity}, {selectedState}, {selectedCountry}
+            You Selected <span>{selectedCity}</span>,{" "}
+            <span>{selectedState}</span>, <span>{selectedCountry}</span>
           </div>
         )}
       </div>
