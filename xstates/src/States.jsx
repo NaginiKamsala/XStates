@@ -110,23 +110,9 @@ function LocationSelector() {
       </div>
       <div>
         {selectedCountry && selectedState && selectedCity && (
-          <div
-            style={{
-              padding: "20px",
-              fontWeight: "bold",
-              display: "flex",
-              flexDirection: "row",
-              justifyContent: "center",
-              alignItems: "center",
-              gap: "5px",
-            }}
-          >
-            <span>
-              <h3>
-                You Selected {selectedCity}, {selectedState}, {selectedCountry}
-              </h3>
-            </span>
-          </div>
+          <h3>
+            You Selected {selectedCity}, {selectedState}, {selectedCountry}
+          </h3>
         )}
       </div>
     </div>
