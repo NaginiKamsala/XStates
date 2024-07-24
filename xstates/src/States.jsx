@@ -122,18 +122,9 @@ function LocationSelector() {
             }}
           >
             <span>
-              <h3>You Selected</h3>
-            </span>
-            <span>
-              <h1>{selectedCity},</h1>
-            </span>
-
-            <span>
-              <h3>{selectedState},</h3>
-            </span>
-
-            <span>
-              <h3>{selectedCountry}</h3>
+              <h3>
+                You Selected {selectedCity}, {selectedState}, {selectedCountry}
+              </h3>
             </span>
           </div>
         )}
