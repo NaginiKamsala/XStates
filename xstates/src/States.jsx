@@ -110,9 +110,31 @@ function LocationSelector() {
       </div>
       <div>
         {selectedCountry && selectedState && selectedCity && (
-          <div style={{ padding: "20px" }}>
-            You Selected <span>{selectedCity}</span>,{" "}
-            <span>{selectedState}</span>, <span>{selectedCountry}</span>
+          <div
+            style={{
+              padding: "20px",
+              fontWeight: "bold",
+              display: "flex",
+              flexDirection: "row",
+              justifyContent: "center",
+              alignItems: "center",
+              gap: "5px",
+            }}
+          >
+            <span>
+              <h3>You Selected</h3>
+            </span>
+            <span>
+              <h1>{selectedCity},</h1>
+            </span>
+
+            <span>
+              <h3>{selectedState},</h3>
+            </span>
+
+            <span>
+              <h3>{selectedCountry}</h3>
+            </span>
           </div>
         )}
       </div>
